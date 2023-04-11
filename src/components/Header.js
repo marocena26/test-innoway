@@ -40,11 +40,11 @@ function Header() {
       <section className="header__section">
         <div className="header__section--wrap">
           <img src={notifications} alt="incidencias" className="logo" />
-          <h2 className="header__section--wrap--tittle">Incidencias</h2>
+          <h2 className="header__section--wrap--title">Incidencias</h2>
         </div>
         <div className="header__section--wrap">
           <img src={folder} alt="perfil" className="logo" />
-          <h2 className="header__section--wrap--tittle">Perfil</h2>
+          <h2 className="header__section--wrap--title">Perfil</h2>
         </div>
         <div className="header__section--wrap">
           <img src={logout} alt="logout" className="logo" />

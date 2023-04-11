@@ -15,36 +15,39 @@ function Header() {
       <nav className="header__nav">
         <ul className="header__nav--list">
           <li className="header__nav--list--item">
-            <NavLink className="link"> Inicio </NavLink>
+            <NavLink className="link item__hover"> Inicio </NavLink>
           </li>
           <li className="header__nav--list--item">
-            <NavLink className="link"> Declaraciones </NavLink>
+            <NavLink className="link item__hover"> Declaraciones </NavLink>
           </li>
           <li className="header__nav--list--item">
-            <NavLink className="link"> Instalaciones </NavLink>
+            <NavLink className="link item__hover"> Instalaciones </NavLink>
           </li>
           <li className="header__nav--list--item">
-            <NavLink className="link"> Incidencias/Alertas </NavLink>
+            <NavLink className="link item__hover">
+              {" "}
+              Incidencias/Alertas{" "}
+            </NavLink>
           </li>
           <li className="header__nav--list--item">
-            <NavLink className="link"> Financiación </NavLink>
+            <NavLink className="link item__hover"> Financiación </NavLink>
           </li>
           <li className="header__nav--list--item">
-            <NavLink className="link"> Informes </NavLink>
+            <NavLink className="link item__hover"> Informes </NavLink>
           </li>
         </ul>
       </nav>
       <section className="header__section">
         <div className="header__section--wrap">
-          <img src={notifications} alt="incidencias" className="header__logo" />
-          <h2>Incidencias</h2>
+          <img src={notifications} alt="incidencias" className="logo" />
+          <h2 className="header__section--wrap--tittle">Incidencias</h2>
         </div>
         <div className="header__section--wrap">
-          <img src={folder} alt="perfil" className="header__logo" />
-          <h2>Perfil</h2>
+          <img src={folder} alt="perfil" className="logo" />
+          <h2 className="header__section--wrap--tittle">Perfil</h2>
         </div>
         <div className="header__section--wrap">
-          <img src={logout} alt="logout" className="header__logo" />
+          <img src={logout} alt="logout" className="logo" />
         </div>
       </section>
     </header>

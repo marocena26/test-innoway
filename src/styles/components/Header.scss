@@ -1,16 +1,26 @@
 @import "../core/variables";
 @import "../core/mixins";
+@import "../core/animations";
 
 .header {
+  height: 5vh;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px $line_color;
   &__title {
+    padding: 0 20px;
+    font-weight: 700;
+    color: $header_color;
   }
   &__nav {
     &--list {
       display: flex;
       gap: 15px;
       &--item {
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $header_color;
       }
     }
   }
@@ -18,10 +28,22 @@
     display: flex;
     &--wrap {
       display: flex;
+      align-items: center;
+      padding: 0 20px;
+      gap: 3px;
+      &--tittle {
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $header_color;
+      }
     }
   }
 }
 
 .link {
   text-decoration: none;
+}
+
+.logo {
+  width: 25px;
 }

@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <Header></Header>
-      <main>
+      <main className="main">
         <Routes>
           <Route path="/" element={<Declaraciones />} />
           <Route path="/Inicio" element={<Inicio />} />

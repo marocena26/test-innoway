@@ -1,0 +1,8 @@
+@import "../core/variables";
+@import "../core/mixins";
+
+.section__data {
+  height: 80vh;
+  padding: 20px 18%;
+  background-color: $background_bottom_color;
+}

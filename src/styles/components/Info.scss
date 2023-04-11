@@ -38,6 +38,26 @@
       gap: 7px;
       padding-top: 10px;
       font-weight: 700;
+      color: $header_color;
+    }
+  }
+}
+
+.aside {
+  &__list {
+    display: flex;
+    gap: 25px;
+    &--item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      &--img {
+        color: $line_color;
+      }
+      &--text {
+        text-transform: uppercase;
+        color: $subtext_color;
+      }
     }
   }
 }

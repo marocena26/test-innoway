@@ -31,19 +31,23 @@ function Info() {
           </p>
         </div>
       </article>
-      <aside>
-        <ul>
-          <li>
-            <img src={create} alt="" />
-            <p>Crear</p>
+      <aside className="aside">
+        <ul className="aside__list">
+          <li className="aside__list--item">
+            <img
+              src={create}
+              alt="create"
+              className="aside__list--item--img icon"
+            />
+            <p className="aside__list--item--text">Crear</p>
           </li>
-          <li>
-            <img src={upload} alt="" />
-            <p>Subir archivo</p>
+          <li className="aside__list--item">
+            <img src={upload} alt="upload" className="aside__list--item icon" />
+            <p className="aside__list--item--text">Subir archivo</p>
           </li>
-          <li>
-            <img src={update} alt="" />
-            <p>Histórico de archivos</p>
+          <li className="aside__list--item">
+            <img src={update} alt="update" className="aside__list--item icon" />
+            <p className="aside__list--item--text">Histórico de archivos</p>
           </li>
         </ul>
       </aside>

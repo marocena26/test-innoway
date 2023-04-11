@@ -1,3 +1,52 @@
+@import "../core/variables";
+@import "../core/mixins";
 .section__database {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+  &--wrap {
+    line-height: 30px;
+    &--text {
+      font-size: 14px;
+      font-style: italic;
+    }
+    &--number {
+      font-style: italic;
+      font-size: 20px;
+    }
+  }
+  &--box {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 15px;
+    background-color: $background_top_color;
+    line-height: 20px;
+    border: solid 1px $line_color;
+    &--text {
+      width: min-content;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    &--number {
+      font-size: 40px;
+      color: $subtitle_color;
+    }
+  }
+  &--swap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &--text {
+      color: $link_color;
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+}
+
+.span {
+  font-size: 20px;
 }

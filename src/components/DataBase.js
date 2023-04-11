@@ -15,17 +15,21 @@ function DataBase() {
           <p className="section__database--wrap--text">
             Gestión de declaraciones
           </p>
-          <p className="section__database--wrap--text">
+          <p className="section__database--wrap--number">
             ago 1, 2022 - ago 31, 2022
           </p>
         </div>
         <div className="section__database--box">
           <p className="section__database--box--text">Número entradas</p>
-          <p className="section__database--box--number">58/691.526,00 kg</p>
+          <p className="section__database--box--number">
+            58/<span className="span">691.526,00 kg</span>{" "}
+          </p>
         </div>
         <div className="section__database--box">
           <p className="section__database--box--text">Número salidas</p>
-          <p className="section__database--box--number">0/0,00 kg</p>
+          <p className="section__database--box--number">
+            0/<span className="span">0,00 kg</span>{" "}
+          </p>
         </div>
         <div className="section__database--swap">
           <img src={swap} alt="swap" className="icon" />

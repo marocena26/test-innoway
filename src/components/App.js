@@ -1,9 +1,15 @@
-import '../styles/App.scss';
+//react libraries
+
+//components
+import Header from "./Header";
+
+//styles
+import "../styles/App.scss";
 
 function App() {
   return (
     <div>
-      <h1>Hola mundo</h1>
+      <Header></Header>
     </div>
   );
 }

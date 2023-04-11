@@ -6,6 +6,7 @@ import notifications from "../images/notifications.svg";
 import logout from "../images/logout.svg";
 
 //styles
+import "../styles/components/Header.scss";
 
 function Header() {
   return (
@@ -14,36 +15,36 @@ function Header() {
       <nav className="header__nav">
         <ul className="header__nav--list">
           <li className="header__nav--list--item">
-            <NavLink> Inicio </NavLink>
+            <NavLink className="link"> Inicio </NavLink>
           </li>
           <li className="header__nav--list--item">
-            <NavLink> Declaraciones </NavLink>
+            <NavLink className="link"> Declaraciones </NavLink>
           </li>
           <li className="header__nav--list--item">
-            <NavLink> Instalaciones </NavLink>
+            <NavLink className="link"> Instalaciones </NavLink>
           </li>
           <li className="header__nav--list--item">
-            <NavLink> Incidencias/Alertas </NavLink>
+            <NavLink className="link"> Incidencias/Alertas </NavLink>
           </li>
           <li className="header__nav--list--item">
-            <NavLink> Financiación </NavLink>
+            <NavLink className="link"> Financiación </NavLink>
           </li>
           <li className="header__nav--list--item">
-            <NavLink> Informes </NavLink>
+            <NavLink className="link"> Informes </NavLink>
           </li>
         </ul>
       </nav>
       <section className="header__section">
-        <div>
-          <img src={notifications} alt="" />
+        <div className="header__section--wrap">
+          <img src={notifications} alt="incidencias" className="header__logo" />
           <h2>Incidencias</h2>
         </div>
-        <div>
-          <img src={folder} alt="" />
+        <div className="header__section--wrap">
+          <img src={folder} alt="perfil" className="header__logo" />
           <h2>Perfil</h2>
         </div>
-        <div>
-          <img src={logout} alt="" />
+        <div className="header__section--wrap">
+          <img src={logout} alt="logout" className="header__logo" />
         </div>
       </section>
     </header>

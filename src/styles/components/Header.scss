@@ -1,2 +1,27 @@
-//styles
-import "../styles/components/Header.scss";
+@import "../core/variables";
+@import "../core/mixins";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  &__title {
+  }
+  &__nav {
+    &--list {
+      display: flex;
+      gap: 15px;
+      &--item {
+      }
+    }
+  }
+  &__section {
+    display: flex;
+    &--wrap {
+      display: flex;
+    }
+  }
+}
+
+.link {
+  text-decoration: none;
+}

@@ -34,20 +34,34 @@ function Info() {
       <aside className="aside">
         <ul className="aside__list">
           <li className="aside__list--item">
-            <img
-              src={create}
-              alt="create"
-              className="aside__list--item--img icon"
-            />
-            <p className="aside__list--item--text">Crear</p>
+            <div className="aside__list--item--wrap">
+              <img
+                src={create}
+                alt="create"
+                className="aside__list--item--img icon"
+              />
+              <p className="aside__list--item--text">Crear</p>
+            </div>
           </li>
           <li className="aside__list--item">
-            <img src={upload} alt="upload" className="aside__list--item icon" />
-            <p className="aside__list--item--text">Subir archivo</p>
+            <div className="aside__list--item--wrap">
+              <img
+                src={upload}
+                alt="upload"
+                className="aside__list--item icon"
+              />
+              <p className="aside__list--item--text">Subir archivo</p>
+            </div>
           </li>
           <li className="aside__list--item">
-            <img src={update} alt="update" className="aside__list--item icon" />
-            <p className="aside__list--item--text">Histórico de archivos</p>
+            <div className="aside__list--item--wrap">
+              <img
+                src={update}
+                alt="update"
+                className="aside__list--item icon"
+              />
+              <p className="aside__list--item--text">Histórico de archivos</p>
+            </div>
           </li>
         </ul>
       </aside>

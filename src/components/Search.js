@@ -12,7 +12,7 @@ function Search() {
     <section>
       <form action="" className="section__form">
         <div className="section__form--wrap">
-          <label className="section__form--wrap--label" htmlFor="">
+          <label className="section__form--wrap--label hidden" htmlFor="">
             Filtrar
           </label>
           <select className="section__form--wrap--select">
@@ -42,7 +42,7 @@ function Search() {
             type="text"
             name="search"
             id="search"
-            placeholder="Buscar"
+            placeholder=" Buscar"
           />
         </div>
       </form>

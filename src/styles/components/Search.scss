@@ -3,10 +3,20 @@
 
 .section__form {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
   padding: 25px;
   background-color: $box_color;
   margin-bottom: 20px;
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: $box_color;
+    margin-bottom: 20px;
+  }
   &--wrap {
     display: flex;
     align-items: center;
@@ -32,6 +42,11 @@
       border: $line_color;
     }
   }
+}
+.section__form--wrap--input::placeholder {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  text-transform: lowercase;
 }
 
 select {

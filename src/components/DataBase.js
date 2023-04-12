@@ -3,7 +3,7 @@
 //components
 
 //images
-import swap from "../images/swap.svg";
+import arrow from "../images/arrow.svg";
 //styles
 import "../styles/components/DataBase.scss";
 
@@ -28,11 +28,11 @@ function DataBase() {
         <div className="section__database--box">
           <p className="section__database--box--text">Número salidas</p>
           <p className="section__database--box--number">
-            0/<span className="span">0,00 kg</span>{" "}
+            0/ <span className="span">0,00 kg</span>{" "}
           </p>
         </div>
         <div className="section__database--swap">
-          <img src={swap} alt="swap" className="icon" />
+          <img src={arrow} alt="swap" className="icon" />
           <p className="section__database--swap--text">
             {" "}
             Exportar todas las declaraciones a Excel

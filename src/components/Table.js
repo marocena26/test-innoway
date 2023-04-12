@@ -4,7 +4,7 @@
 
 //images
 import swap from "../images/swap.svg";
-import notifications from "../images/notifications.svg";
+import incidencia from "../images/incidencia.svg";
 import update from "../images/update.svg";
 import dot from "../images/dot.svg";
 import draft from "../images/draft.svg";
@@ -121,7 +121,7 @@ function Table() {
             </th>
             <th className="thead__categories">
               <div className="thead__categories--wrap">
-                <p>Origen</p> (provincia){" "}
+                <p>Origen (provincia)</p>
                 <img src={swap} alt="swap" className="icon" />
               </div>
             </th>
@@ -158,7 +158,7 @@ function Table() {
                 <div className="td__categories--incidencia">
                   <div className="td__categories--incidencia--element">
                     <img
-                      src={notifications}
+                      src={incidencia}
                       alt="incidencias"
                       className="element"
                     />{" "}

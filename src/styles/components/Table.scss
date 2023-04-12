@@ -4,6 +4,12 @@
 .section__table {
   width: 100%;
   // border-collapse: collapse;
+  padding: 20px 50px;
+
+  @include desktop {
+    padding: 20px 18%;
+    width: 100%;
+  }
 
   td {
     text-align: left;
@@ -26,9 +32,13 @@ tr:nth-child(odd) {
   border-top: 1px solid $line_color;
   text-align: left;
   &--wrap {
+    width: min-content;
     display: flex;
     align-items: center;
     gap: 10px;
+    @include tablet {
+      width: 100%;
+    }
   }
 }
 

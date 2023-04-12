@@ -56,12 +56,13 @@ function Header() {
         <div className="header__section--wrap">
           <img src={notifications} alt="incidencias" className="logo" />
           <h2 className="header__section--wrap--title">Incidencias</h2>
+          <div class="rectangle"></div>
         </div>
         <div className="header__section--wrap">
           <img src={folder} alt="perfil" className="logo" />
           <h2 className="header__section--wrap--title">Perfil</h2>
         </div>
-        <div className="header__section--wrap">
+        <div className="header__section--wrap logout">
           <img src={logout} alt="logout" className="logo" />
         </div>
       </section>

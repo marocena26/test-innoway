@@ -3,11 +3,13 @@
 @import "../core/animations";
 
 .header {
-  height: 5vh;
+  height: 6vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: solid 1px $line_color;
+  background-color: $background_top_color;
+  font-size: 14px;
   &__title {
     padding: 0 20px;
     font-weight: 700;
@@ -45,5 +47,35 @@
 }
 
 .logo {
-  width: 25px;
+  width: 18px;
+}
+
+.logout {
+  background-color: $header_color;
+  padding: 6px 6px;
+}
+
+.rectangle {
+  width: 50px;
+  height: 10px;
+  background-color: $first-notification_color;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+  }
+  &::before {
+    left: 0;
+    background-color: $second-notification_color;
+  }
+  &::after {
+    right: 0;
+    background-color: $first-notification_color;
+  }
 }

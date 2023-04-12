@@ -2,8 +2,12 @@
 @import "../core/mixins";
 
 .section__info {
-  height: 15vh;
-  padding: 20px 18%;
+  height: 28vh;
+  padding: 20px 50px;
+  background-color: $background_top_color;
+  @include desktop {
+    padding: 20px 18%;
+  }
 }
 
 .article {
@@ -24,9 +28,10 @@
     }
   }
   &__config {
-    width: 130px;
+    width: 120px;
     padding: 15px;
     line-height: 20px;
+    font-size: 14px;
     border: solid 1px $line_color;
 
     &--title {
@@ -45,13 +50,23 @@
 }
 
 .aside {
+  font-size: 14px;
+  font-weight: 700;
+
   &__list {
     display: flex;
     gap: 25px;
     &--item {
       display: flex;
       align-items: center;
-      gap: 5px;
+      &--wrap {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        border-right: 3px solid $line_color;
+        padding-right: 25px;
+        height: 40px;
+      }
       &--img {
         color: $line_color;
       }

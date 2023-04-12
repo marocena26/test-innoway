@@ -1,0 +1,82 @@
+[
+  {
+    "reference": "DCS00460001447720220215037",
+    "type": "B",
+    "quantity": "25,140.00 kg",
+    "origin": "BARCELONA",
+    "date": "02/08/2022",
+    "oily": "20"
+  },
+  {
+    "reference": "DCS00460001447720220215044",
+    "type": "B",
+    "quantity": "25,120.00 kg",
+    "origin": "VALENCIA",
+    "date": "03/08/2022",
+    "oily": "92.87"
+  },
+  {
+    "reference": "DCS30010003226820220055581",
+    "type": "B",
+    "quantity": "25,340.00 kg",
+    "origin": "ALAVA",
+    "date": "02/08/2022",
+    "oily": "92.69"
+  },
+  {
+    "reference": "DCS30023000121120224593449",
+    "type": "B",
+    "quantity": "24,440.00 kg",
+    "origin": "ALBACETE",
+    "date": "02/08/2022",
+    "oily": "94.4"
+  },
+  {
+    "reference": "DCS30110000440320220006595",
+    "type": "B",
+    "quantity": "24,940.00 kg",
+    "origin": "CADIZ",
+    "date": "03/08/2022",
+    "oily": "96.45"
+  },
+  {
+    "reference": "DCS30410001395920220059977",
+    "type": "B",
+    "quantity": "27,940.00 kg",
+    "origin": "SEVILLA",
+    "date": "04/08/2022",
+    "oily": "93.2"
+  },
+  {
+    "reference": "DCS30300000009720220004508",
+    "type": "B",
+    "quantity": "24,240.00 kg",
+    "origin": "GRANADA",
+    "date": "10/08/2022",
+    "oily": "92.9"
+  },
+  {
+    "reference": "DCS00280007062220220223702",
+    "type": "B",
+    "quantity": "25,900.00 kg",
+    "origin": "MADRID",
+    "date": "10/08/2022",
+    "oily": "96"
+  },
+  {
+    "reference": "DCS01180000517020220501442",
+    "type": "B",
+    "quantity": "24,680.00 kg",
+    "origin": "GRANADA",
+    "date": "10/08/2022",
+    "oily": "92.9"
+  },
+  {
+    "reference": "DCS00460001447720220216880",
+    "type": "B",
+    "quantity": "25,100.00 kg",
+    "origin": "VALENCIA",
+    "date": "04/08/2022",
+    "oily": "92.3"
+  }
+]

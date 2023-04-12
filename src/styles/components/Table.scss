@@ -1,0 +1,42 @@
+@import "../core/variables";
+@import "../core/mixins";
+
+.section__table {
+  width: 100%;
+  // border-collapse: collapse;
+
+  td {
+    text-align: left;
+    border-bottom: 1px solid $line_color;
+    border-top: 1px solid $line_color;
+    &:nth-child(odd) {
+      background-color: #f9f9f9;
+    }
+  }
+}
+
+.thead__categories {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 8px;
+  text-transform: uppercase;
+  color: $subtitle_color;
+  text-align: left;
+}
+
+.td__categories {
+  font-size: 14px;
+  text-align: left;
+  padding: 8px;
+  &--incidencia {
+    text-align: center;
+  }
+  &--draft {
+    font-weight: 700;
+    color: $link_color;
+  }
+}
+
+.element {
+  width: 15px;
+}

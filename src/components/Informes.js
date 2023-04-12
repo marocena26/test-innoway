@@ -1,7 +1,3 @@
-//react libraries
-
-//components
-
 //styles
 import "../styles/components/Declaraciones.scss";
 

@@ -1,9 +1,6 @@
-//react libraries
-
-//components
-
 //images
 import arrow from "../images/arrow.svg";
+
 //styles
 import "../styles/components/DataBase.scss";
 

@@ -1,7 +1,9 @@
 //react libraries
 import { useState } from "react";
+
 //components
 import dataTable from "../data/dataBase.json";
+
 //images
 import swap from "../images/swap.svg";
 import incidencia from "../images/incidencia.svg";
@@ -14,6 +16,7 @@ import notification_pen from "../images/notification_pen.svg";
 import update_wait from "../images/update_wait.svg";
 import double_arrow_left from "../images/double_arrow_left.svg";
 import double_arrow_right from "../images/double_arrow_right.svg";
+
 //styles
 import "../styles/components/Table.scss";
 
@@ -128,9 +131,7 @@ function Table() {
           ))}
         </tbody>
       </table>
-
       {/* section footer */}
-
       <section className="section__tfoot">
         <p className="section__tfoot--text">
           Mostrando 1 a 10 de 46 declaraciones

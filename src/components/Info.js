@@ -1,6 +1,5 @@
 //react libraries
 import { useEffect, useState } from "react";
-//components
 
 //images
 import settings from "../images/settings.svg";

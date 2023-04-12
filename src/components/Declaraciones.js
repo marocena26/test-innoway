@@ -1,5 +1,3 @@
-//react libraries
-
 //components
 import Info from "./Info";
 import Data from "./Data";

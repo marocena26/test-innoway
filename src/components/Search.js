@@ -1,9 +1,3 @@
-//react libraries
-
-//components
-
-//images
-
 //styles
 import "../styles/components/Search.scss";
 

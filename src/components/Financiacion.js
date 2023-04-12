@@ -1,9 +1,3 @@
-//react libraries
-
-//components
-
-//styles
-
 function Financiacion() {
   return (
     <section className="section__info">

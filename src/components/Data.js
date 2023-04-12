@@ -1,10 +1,7 @@
-//react libraries
-
 //components
 import Search from "./Search";
 import DataBase from "./DataBase";
 import Table from "./Table";
-//images
 
 //styles
 import "../styles/components/Data.scss";

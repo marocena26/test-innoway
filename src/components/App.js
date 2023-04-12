@@ -2,7 +2,6 @@
 import { Route, Routes } from "react-router-dom";
 
 //components
-
 import Header from "./Header";
 import Declaraciones from "./Declaraciones";
 import Financiacion from "./Financiacion";

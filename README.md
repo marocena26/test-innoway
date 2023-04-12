@@ -52,9 +52,6 @@ The following tools have been used when solving the project:
 3. Open it in your code editor.
 4. Open a terminal and **install the local dependencies** by executing in the command terminal. Here are the ones I used to start my project:
 
-1. Open it in your code editor.
-2. Open a terminal and **install the local dependencies** by executing in the command terminal. Here are the ones I used to start my project:
-
 ```bash
 npm install 
 npm install node-sass

@@ -41,7 +41,7 @@ The following tools have been used when solving the project:
 - **Position**
 - **Transition**
 - **GIT version control**
-- *UseState**
+- **UseState**
 
 ## 💾 Steps to follow to use this project on your computer:
 

@@ -15,25 +15,40 @@ function Header() {
       <nav className="header__nav">
         <ul className="header__nav--list">
           <li className="header__nav--list--item">
-            <NavLink className="link item__hover"> Inicio </NavLink>
+            <NavLink to="/Inicio" className="link item__hover">
+              {" "}
+              Inicio{" "}
+            </NavLink>
           </li>
           <li className="header__nav--list--item">
-            <NavLink className="link item__hover"> Declaraciones </NavLink>
+            <NavLink to="/" className="link item__hover">
+              {" "}
+              Declaraciones{" "}
+            </NavLink>
           </li>
           <li className="header__nav--list--item">
-            <NavLink className="link item__hover"> Instalaciones </NavLink>
+            <NavLink to="/Instalaciones" className="link item__hover">
+              {" "}
+              Instalaciones{" "}
+            </NavLink>
           </li>
           <li className="header__nav--list--item">
-            <NavLink className="link item__hover">
+            <NavLink to="/Incidencias" className="link item__hover">
               {" "}
               Incidencias/Alertas{" "}
             </NavLink>
           </li>
           <li className="header__nav--list--item">
-            <NavLink className="link item__hover"> Financiación </NavLink>
+            <NavLink to="/Financiacion" className="link item__hover">
+              {" "}
+              Financiación{" "}
+            </NavLink>
           </li>
           <li className="header__nav--list--item">
-            <NavLink className="link item__hover"> Informes </NavLink>
+            <NavLink to="/Informes" className="link item__hover">
+              {" "}
+              Informes{" "}
+            </NavLink>
           </li>
         </ul>
       </nav>

@@ -1,6 +1,8 @@
 @import "../core/variables";
 @import "../core/mixins";
 
+//section table
+
 .section__table {
   width: 100%;
   // border-collapse: collapse;
@@ -12,7 +14,7 @@
   }
 
   td {
-    text-align: left;
+    // text-align: center;
     border-bottom: 1px solid $line_color;
     border-top: 1px solid $line_color;
   }
@@ -64,6 +66,52 @@ tr:nth-child(odd) {
   }
 }
 
+.center {
+  text-align: center;
+}
+
 .element {
+  width: 15px;
+}
+
+//section table - footer
+
+.section__tfoot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding-top: 10px;
+  color: $header_color;
+  &--text {
+    font-size: 12px;
+  }
+  &--btn {
+    border: none;
+    font-size: 12px;
+  }
+  &--btns {
+    border: none;
+    font-size: 12px;
+  }
+  &--form {
+    &--select {
+      padding: 5px;
+    }
+  }
+  &--wrap {
+    &--notification {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3px;
+    }
+    &--text {
+      font-size: 12px;
+    }
+  }
+}
+
+.arrow {
   width: 15px;
 }

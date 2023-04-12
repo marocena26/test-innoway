@@ -21,7 +21,13 @@
     display: flex;
     align-items: center;
     gap: 10px;
+
     &--label {
+      display: flex;
+      align-items: center;
+      border-right: 3px solid $background_top_color;
+      padding-right: 10px;
+      height: 31px;
       font-size: 14px;
       font-weight: 700;
     }
@@ -52,4 +58,13 @@
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  border-right: 3px solid $background_top_color;
+  border-left: 3px solid $background_top_color;
+  padding: 0 10px;
+  height: 31px;
 }

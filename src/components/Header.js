@@ -58,7 +58,7 @@ function Header() {
           <h2 className="header__section--wrap--title">Incidencias</h2>
           <div class="rectangle"></div>
         </div>
-        <div className="header__section--wrap">
+        <div className="header__section--wrap profile">
           <img src={folder} alt="perfil" className="logo" />
           <h2 className="header__section--wrap--title">Perfil</h2>
         </div>

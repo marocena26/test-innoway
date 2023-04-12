@@ -12,7 +12,7 @@ function Search() {
     <section>
       <form action="" className="section__form">
         <div className="section__form--wrap">
-          <label className="section__form--wrap--label hidden" htmlFor="">
+          <label className="section__form--wrap--label" htmlFor="">
             Filtrar
           </label>
           <select className="section__form--wrap--select">
@@ -22,7 +22,7 @@ function Search() {
             <option value="">01/010/2022 - 31/010/2022</option>
           </select>
         </div>
-        <div className="section__form--wrap">
+        <div className="section__form--wrap btn">
           <button className="section__form--wrap--btn">Ene</button>
           <button className="section__form--wrap--btn">Feb</button>
           <button className="section__form--wrap--btn">Mar</button>

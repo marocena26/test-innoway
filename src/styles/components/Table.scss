@@ -9,10 +9,11 @@
     text-align: left;
     border-bottom: 1px solid $line_color;
     border-top: 1px solid $line_color;
-    &:nth-child(odd) {
-      background-color: #f9f9f9;
-    }
   }
+}
+
+tr:nth-child(odd) {
+  background-color: $background_top_color;
 }
 
 .thead__categories {
@@ -20,18 +21,34 @@
   font-weight: 700;
   padding: 8px;
   text-transform: uppercase;
+  background-color: $background_bottom_color;
   color: $subtitle_color;
+  border-top: 1px solid $line_color;
   text-align: left;
+  &--wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
 }
 
 .td__categories {
   font-size: 14px;
   text-align: left;
   padding: 8px;
+
   &--incidencia {
-    text-align: center;
+    display: flex;
+
+    gap: 15px;
+    &--element {
+      display: flex;
+    }
   }
   &--draft {
+    display: flex;
+    align-items: center;
+    gap: 5px;
     font-weight: 700;
     color: $link_color;
   }

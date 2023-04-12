@@ -1,0 +1,40 @@
+@import "../core/variables";
+@import "../core/mixins";
+
+.section__form {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  background-color: $box_color;
+  margin-bottom: 20px;
+  &--wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &--label {
+      font-size: 14px;
+      font-weight: 700;
+    }
+    &--select {
+      padding: 8px;
+      border: $line_color;
+    }
+    &--btn {
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 8px;
+      background-color: $btn_color;
+      border: none;
+    }
+    &--input {
+      padding: 8px;
+      border: $line_color;
+    }
+  }
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}

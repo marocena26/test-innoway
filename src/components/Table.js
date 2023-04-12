@@ -104,22 +104,36 @@ function Table() {
               <input type="checkbox" />
             </th>
             <th className="thead__categories">
-              Nº referencia <img src={swap} alt="swap" className="icon" />
+              <div className="thead__categories--wrap">
+                <p>Nº referencia</p>{" "}
+                <img src={swap} alt="swap" className="icon" />
+              </div>
             </th>
             <th className="thead__categories">
-              Tipo <img src={swap} alt="swap" className="icon" />
+              <div className="thead__categories--wrap">
+                <p>Tipo</p> <img src={swap} alt="swap" className="icon" />
+              </div>
             </th>
             <th className="thead__categories">
-              Cantidad <img src={swap} alt="swap" className="icon" />
+              <div className="thead__categories--wrap">
+                <p>Cantidad</p> <img src={swap} alt="swap" className="icon" />
+              </div>
             </th>
             <th className="thead__categories">
-              Origen (provincia) <img src={swap} alt="swap" className="icon" />
+              <div className="thead__categories--wrap">
+                <p>Origen</p> (provincia){" "}
+                <img src={swap} alt="swap" className="icon" />
+              </div>
             </th>
             <th className="thead__categories">
-              Fecha <img src={swap} alt="swap" className="icon" />
+              <div className="thead__categories--wrap">
+                <p>Fecha</p> <img src={swap} alt="swap" className="icon" />
+              </div>
             </th>
             <th className="thead__categories">
-              % Oleoso <img src={swap} alt="swap" className="icon" />
+              <div className="thead__categories--wrap">
+                <p>% Oleoso</p> <img src={swap} alt="swap" className="icon" />
+              </div>
             </th>
             <th className="thead__categories">Incidencia</th>
             <th className="thead__categories"> </th>
@@ -139,22 +153,28 @@ function Table() {
               <td className="td__categories">{row.origin}</td>
               <td className="td__categories">{row.date}</td>
               <td className="td__categories">{row.oily}</td>
-              <td className="td__categories--incidencia">
+              <td className="td__categories">
                 {row.incidencia}
-                <div>
-                  <img
-                    src={notifications}
-                    alt="incidencias"
-                    className="element"
-                  />{" "}
-                  0
-                </div>
-                <div>
-                  <img src={update} alt="update" className=" element" />0
+                <div className="td__categories--incidencia">
+                  <div className="td__categories--incidencia--element">
+                    <img
+                      src={notifications}
+                      alt="incidencias"
+                      className="element"
+                    />{" "}
+                    <p>0</p>
+                  </div>
+                  <div className="td__categories--incidencia--element">
+                    <img src={update} alt="update" className=" element" />
+                    <p>0</p>
+                  </div>
                 </div>
               </td>
-              <td className="td__categories--draft">
-                <img src={draft} alt="swap" className="icon" /> Ver PDF
+              <td className="td__categories">
+                <div className="td__categories--draft">
+                  <img src={draft} alt="swap" className="icon" />
+                  <p> Ver PDF</p>
+                </div>
               </td>
               <td className="td__categories">
                 <img src={dot} alt="swap" className="icon" />

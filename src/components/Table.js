@@ -173,7 +173,7 @@ function Table() {
                 {" "}
                 <input type="checkbox" />
               </td>
-              <td className="td__categories ">{row.reference}</td>
+              <td className="td__categories reference">{row.reference}</td>
               <td className="td__categories center">{row.type}</td>
               <td className="td__categories center">{row.quantity}</td>
               <td className="td__categories ">{row.origin}</td>

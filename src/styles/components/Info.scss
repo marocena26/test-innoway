@@ -2,10 +2,9 @@
 @import "../core/mixins";
 
 .section__info {
-  height: 170px;
   padding: 20px 50px;
   background-color: $background_top_color;
-  @include desktop {
+  @include tablet {
     padding: 20px 18%;
   }
 }
@@ -23,8 +22,9 @@
       font-weight: 700;
     }
     &--text {
-      font-size: 14px;
+      font-size: 12px;
       line-height: 20px;
+      width: 360px;
     }
   }
   &__config {
@@ -80,4 +80,27 @@
 
 .icon {
   width: 20px;
+}
+
+//responsive version
+.article__responsive {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  border: solid 1px $line_color;
+  &--title {
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 150px;
+  }
+  &--wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    &--item {
+      text-align: center;
+    }
+  }
 }

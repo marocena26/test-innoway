@@ -2,15 +2,16 @@
 @import "../core/mixins";
 
 //section table
-
 .section__table {
+  table-layout: fixed;
   width: 100%;
-  // border-collapse: collapse;
+  border-collapse: collapse;
   padding: 20px 50px;
 
   @include desktop {
     padding: 20px 18%;
     width: 100%;
+    table-layout: auto;
   }
 
   td {
@@ -25,7 +26,7 @@ tr:nth-child(odd) {
 }
 
 .thead__categories {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   padding: 8px;
   text-transform: uppercase;
@@ -34,20 +35,30 @@ tr:nth-child(odd) {
   border-top: 1px solid $line_color;
   text-align: left;
   &--wrap {
-    width: min-content;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
-    @include tablet {
+    gap: 5px;
+    @include desktop {
+      font-size: 14px;
+      display: flex;
+      flex-direction: row;
       width: 100%;
+      gap: 10px;
     }
   }
 }
 
 .td__categories {
-  font-size: 14px;
+  font-size: 12px;
   text-align: left;
   padding: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  @include desktop {
+    font-size: 14px;
+  }
 
   &--incidencia {
     display: flex;
@@ -64,6 +75,10 @@ tr:nth-child(odd) {
     font-weight: 700;
     color: $link_color;
   }
+}
+
+.reference {
+  width: 5ch;
 }
 
 .center {
@@ -114,4 +129,18 @@ tr:nth-child(odd) {
 
 .arrow {
   width: 15px;
+}
+
+th {
+  width: 20px;
+}
+
+th + th {
+  width: auto;
+}
+td {
+  width: 20px;
+}
+td + td {
+  width: auto;
 }

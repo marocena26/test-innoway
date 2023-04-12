@@ -10,7 +10,7 @@
   padding: 25px;
   background-color: $box_color;
   margin-bottom: 20px;
-  @include tablet {
+  @include desktop {
     flex-direction: row;
     justify-content: space-between;
     padding: 25px;
@@ -25,11 +25,13 @@
     &--label {
       display: flex;
       align-items: center;
-      border-right: 3px solid $background_top_color;
-      padding-right: 10px;
-      height: 31px;
       font-size: 14px;
       font-weight: 700;
+      @include desktop {
+        border-right: 3px solid $background_top_color;
+        padding-right: 10px;
+        height: 31px;
+      }
     }
     &--select {
       padding: 8px;
@@ -63,8 +65,10 @@ select {
 .btn {
   display: flex;
   align-items: center;
-  border-right: 3px solid $background_top_color;
-  border-left: 3px solid $background_top_color;
-  padding: 0 10px;
-  height: 31px;
+  @include desktop {
+    border-right: 3px solid $background_top_color;
+    border-left: 3px solid $background_top_color;
+    padding: 0 10px;
+    height: 31px;
+  }
 }

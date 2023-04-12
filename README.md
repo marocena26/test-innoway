@@ -21,11 +21,11 @@ With a **layout design** as the starter point, the exercise consists on developi
 
 The following **requirements** have to be respected:
 
-- An **React** project will be created in its latest version. 
+- A **React** project will be created in its latest version. 
 - A **basic routing system** will be created with the options that can be seen in the images where only the page to layout (declarations) will have the content. 
-- We will value the creation of **react components in order to reuse code**. 
-- You will have to use for the layout **.scss files** (when you create the angular project choose it like this) and you will value the use of the advantages of this one.
-- Resolution. than **900px wide**.
+- The creation of **react components in order to reuse code** will be valuated. 
+- The layout **.scss files** (when you create the angular project choose it like this) ought to be used and the advantages of this will be valuated.
+- Must have a resolution **below 900px**.
 
 ## 🛠️ Tools
 

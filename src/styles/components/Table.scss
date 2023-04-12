@@ -8,7 +8,7 @@
   border-collapse: collapse;
   padding: 20px 50px;
 
-  @include desktop {
+  @include middle {
     padding: 20px 18%;
     width: 100%;
     table-layout: auto;
@@ -34,13 +34,16 @@ tr:nth-child(odd) {
   color: $subtitle_color;
   border-top: 1px solid $line_color;
   text-align: left;
+  @include middle {
+    font-size: 14px;
+  }
   &--wrap {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5px;
-    @include desktop {
+    @include middle {
       font-size: 14px;
       display: flex;
       flex-direction: row;
@@ -56,7 +59,7 @@ tr:nth-child(odd) {
   padding: 8px;
   overflow: hidden;
   text-overflow: ellipsis;
-  @include desktop {
+  @include middle {
     font-size: 14px;
   }
 

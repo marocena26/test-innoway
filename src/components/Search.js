@@ -16,7 +16,6 @@ function Search() {
             Filtrar
           </label>
           <select className="section__form--wrap--select">
-            <option value="">Escoge una opción</option>
             <option value="">01/08/2022 - 31/08/2022</option>
             <option value="">01/09/2022 - 31/09/2022 </option>
             <option value="">01/010/2022 - 31/010/2022</option>
@@ -42,7 +41,7 @@ function Search() {
             type="text"
             name="search"
             id="search"
-            placeholder=" Buscar"
+            placeholder=""
           />
         </div>
       </form>

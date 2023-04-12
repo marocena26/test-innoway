@@ -2,7 +2,6 @@
 @import "../core/mixins";
 
 .section__data {
-  // height: 79vh;
   padding: 20px 50px;
   background-color: $background_bottom_color;
   @include desktop {

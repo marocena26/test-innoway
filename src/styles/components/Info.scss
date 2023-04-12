@@ -4,7 +4,7 @@
 .section__info {
   padding: 20px 50px;
   background-color: $background_top_color;
-  @include tablet {
+  @include desktop {
     padding: 20px 18%;
   }
 }
@@ -84,12 +84,20 @@
 
 //responsive version
 .article__responsive {
+  width: 690px;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-end;
   gap: 10px;
-  padding: 20px;
+  position: relative;
+  padding: 10px;
+  margin: 20px 0;
   border: solid 1px $line_color;
+
+  &--container {
+    display: flex;
+    gap: 10px;
+  }
   &--title {
     text-transform: uppercase;
     font-weight: 700;
@@ -98,9 +106,22 @@
   &--wrap {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     &--item {
       text-align: center;
+      border-left: 3px solid $line_color;
+      padding-left: 5px;
+      height: 40px;
     }
   }
+}
+.open {
+  color: $open_color;
+}
+.close {
+  color: $link_color;
+}
+
+.grey {
+  color: $subtext_color;
 }

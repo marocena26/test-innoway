@@ -7,17 +7,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10px;
   width: 100%;
   background-color: $background_top_color;
   border-bottom: solid 1px $line_color;
 
-  @include desktop {
+  @include middle {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: 40px;
     font-size: 14px;
+    gap: 0;
   }
   &__title {
     display: flex;
@@ -26,7 +28,7 @@
     font-weight: 700;
     color: $header_color;
     font-size: 18px;
-    @include desktop {
+    @include middle {
       border-right: 2px solid $line_color;
       padding: 0 20px;
       height: 40px;
@@ -49,7 +51,7 @@
       display: flex;
       align-items: center;
       padding: 0 20px;
-      gap: 3px;
+      gap: 8px;
       &--title {
         text-transform: uppercase;
         font-weight: 700;
@@ -76,7 +78,7 @@
   display: flex;
   align-items: center;
 
-  @include desktop {
+  @include middle {
     border-left: 2px solid $line_color;
     padding-left: 20px;
     height: 40px;

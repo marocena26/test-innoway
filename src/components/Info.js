@@ -10,6 +10,7 @@ import upload from "../images/upload.svg";
 import lock_open from "../images/lock_open.svg";
 import lock from "../images/lock.svg";
 import lock_grey from "../images/lock_grey.svg";
+import close from "../images/close.svg";
 
 //styles
 import "../styles/components/Info.scss";
@@ -36,7 +37,7 @@ function Info() {
             declaraciones.
           </p>
         </div>
-        {/* elemento para escritorio */}
+        {/* desktop */}
         {isModalOpen ? (
           ""
         ) : (
@@ -49,59 +50,78 @@ function Info() {
             </p>
           </div>
         )}
-        {/* elemento para escritorio */}
+        {/* desktop */}
       </article>
-      {/* elemento para responsive */}
+      {/* responsive < 900 */}
       {isModalOpen ? (
         <article className="article__responsive">
-          <h3 className="article__responsive--title">
-            Meses abiertos a declaraciones
-          </h3>
-          <div className="article__responsive--wrap">
-            <div className="article__responsive--wrap--item">
-              <img src={lock} alt="settings" className="icon" /> <p>Ene</p>
-            </div>
-            <div className="article__responsive--wrap--item">
-              <img src={lock} alt="settings" className="icon" /> <p>Feb</p>
-            </div>
-            <div className="article__responsive--wrap--item">
-              <img src={lock} alt="settings" className="icon" /> <p>Mar</p>
-            </div>
-            <div className="article__responsive--wrap--item">
-              <img src={lock} alt="settings" className="icon" /> <p>Abr</p>
-            </div>
-            <div className="article__responsive--wrap--item">
-              <img src={lock} alt="settings" className="icon" /> <p>May</p>
-            </div>
-            <div className="article__responsive--wrap--item">
-              <img src={lock_open} alt="settings" className="icon" /> <p>Jun</p>
-            </div>
-            <div className="article__responsive--wrap--item">
-              <img src={lock_open} alt="settings" className="icon" /> <p>Jul</p>
-            </div>
-            <div className="article__responsive--wrap--item">
-              <img src={lock_grey} alt="settings" className="icon" /> <p>Ago</p>
-            </div>
-            <div className="article__responsive--wrap--item">
-              <img src={lock_grey} alt="settings" className="icon" /> <p>Sep</p>
-            </div>
-            <div className="article__responsive--wrap--item">
-              <img src={lock_grey} alt="settings" className="icon" /> <p>Oct</p>
-            </div>
-            <div className="article__responsive--wrap--item">
-              <img src={lock_grey} alt="settings" className="icon" /> <p>Nov</p>
-            </div>
-            <div className="article__responsive--wrap--item">
-              <img src={lock_grey} alt="settings" className="icon" /> <p>Dic</p>
+          <img
+            src={close}
+            alt="close"
+            className="icon"
+            onClick={handleCloseModal}
+          />
+          <div className="article__responsive--container">
+            <h3 className="article__responsive--title">
+              Meses abiertos a declaraciones
+            </h3>
+            <div className="article__responsive--wrap">
+              <div className="article__responsive--wrap--item">
+                <img src={lock} alt="settings" className="icon" />{" "}
+                <p className="close">Ene</p>
+              </div>
+              <div className="article__responsive--wrap--item">
+                <img src={lock} alt="settings" className="icon" />{" "}
+                <p className="close">Feb</p>
+              </div>
+              <div className="article__responsive--wrap--item">
+                <img src={lock} alt="settings" className="icon" />{" "}
+                <p className="close">Mar</p>
+              </div>
+              <div className="article__responsive--wrap--item">
+                <img src={lock} alt="settings" className="icon" />{" "}
+                <p className="close">Abr</p>
+              </div>
+              <div className="article__responsive--wrap--item">
+                <img src={lock} alt="settings" className="icon" />{" "}
+                <p className="close">May</p>
+              </div>
+              <div className="article__responsive--wrap--item">
+                <img src={lock_open} alt="settings" className="icon" />{" "}
+                <p className="open">Jun</p>
+              </div>
+              <div className="article__responsive--wrap--item">
+                <img src={lock_open} alt="settings" className="icon" />{" "}
+                <p className="open">Jul</p>
+              </div>
+              <div className="article__responsive--wrap--item">
+                <img src={lock_grey} alt="settings" className="icon" />{" "}
+                <p className="grey">Ago</p>
+              </div>
+              <div className="article__responsive--wrap--item">
+                <img src={lock_grey} alt="settings" className="icon" />{" "}
+                <p className="grey">Sep</p>
+              </div>
+              <div className="article__responsive--wrap--item">
+                <img src={lock_grey} alt="settings" className="icon" />{" "}
+                <p className="grey">Oct</p>
+              </div>
+              <div className="article__responsive--wrap--item">
+                <img src={lock_grey} alt="settings" className="icon" />{" "}
+                <p className="grey">Nov</p>
+              </div>
+              <div className="article__responsive--wrap--item">
+                <img src={lock_grey} alt="settings" className="icon" />{" "}
+                <p className="grey">Dic</p>
+              </div>
             </div>
           </div>
-          <div onClick={handleCloseModal}>X</div>
         </article>
       ) : (
         ""
       )}
 
-      {/* elemento para responsive */}
+      {/*  responsive < 900 */}
       <aside className="aside">
         <ul className="aside__list">
           <li className="aside__list--item">

@@ -5,35 +5,60 @@
   justify-content: space-between;
   align-items: center;
   padding-bottom: 40px;
+  @include middle {
+    gap: 15px;
+  }
   &--wrap {
+    width: 16ch;
     line-height: 30px;
+    @include middle {
+      width: 25ch;
+    }
     &--text {
-      font-size: 14px;
+      font-size: 12px;
       font-style: italic;
+      @include middle {
+        font-size: 14px;
+      }
     }
     &--number {
       font-style: italic;
       font-weight: 500;
-      font-size: 18px;
+      font-size: 16px;
+      @include middle {
+        font-size: 18px;
+      }
     }
   }
   &--box {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 25px;
     padding: 15px;
     background-color: $background_top_color;
     line-height: 20px;
     border: solid 1px $line_color;
+    @include middle {
+      gap: 10px;
+    }
+    @include desktop {
+      gap: 30px;
+    }
     &--text {
       width: min-content;
       text-transform: uppercase;
       font-weight: 700;
-      font-size: 14px;
+      font-size: 12px;
+      @include middle {
+        font-size: 14px;
+      }
     }
     &--number {
-      font-size: 40px;
+      font-size: 30px;
       color: $subtitle_color;
+      @include middle {
+        font-size: 40px;
+      }
     }
   }
   &--swap {
@@ -41,13 +66,21 @@
     align-items: center;
     gap: 10px;
     &--text {
+      width: 16ch;
       color: $link_color;
-      font-size: 14px;
+      font-size: 12px;
       font-weight: 700;
+      @include middle {
+        font-size: 14px;
+        width: 100%;
+      }
     }
   }
 }
 
 .span {
-  font-size: 20px;
+  font-size: 18px;
+  @include middle {
+    font-size: 25px;
+  }
 }

@@ -64,3 +64,11 @@ The project has to be **started** every time we start programming, to do this we
 npm start
 ```
 After running `npm start` we can start editing all the files inside the src/ folder and program comfortably 💫
+
+## ✅ Final result
+
+<div id="header" align="center">
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/113302094/231598713-9506f611-4a42-4f62-9d37-25fff04fffdb.png">
+</div>
+
+
